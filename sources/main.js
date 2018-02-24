@@ -1,5 +1,6 @@
 /* 
- * Possible arguments : 
+ * Main file with the following arguments available : 
+ * You can have more information with --help option
  * --language(-l)   String  [fr|en]
  * --animation(-a)  Boolean
  * --min-note(-n)   Int
@@ -38,27 +39,7 @@ https.get(uri, (response) => {
         
         Display.header(data);
         Display.body(data.results);
-
-//        console.table([
-//            {
-//                '': '',
-//                Total: data.total_results,
-//                'Page courante': data.page,
-//                'Nombre de pages': data.total_pages
-//            }
-//        ]);
-//        var results = [];
-//        Object.keys(data.results).forEach(function (k) {
-//            var date = new Date(data.results[k].release_date);
-//            results.push({ 
-//                '':'', 
-//                'Titre' : data.results[k].title, 
-//                'Date' : '(' + date.getFullYear() + ')', 
-//                'Note'  : data.results[k].vote_average.toString().replace(".", ",") + '/10'
-//            });
-//        });
-//        
-//        console.table(results);
+        
     });
 }).on('error', (err) => {
     console.log("Error : " + err.message);

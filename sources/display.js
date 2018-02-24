@@ -1,5 +1,5 @@
 /* 
- * Display result into table in consoe mode
+ * Display result into table in console mode
  */
 
 let cTable = require('console.table');

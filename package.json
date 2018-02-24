@@ -1,0 +1,25 @@
+{
+  "name": "moviefinder",
+  "version": "0.1.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "Noumcreation",
+  "contributors": [],
+  "dependencies": {
+    "command-line-args": "^5.0.2",
+    "command-line-usage": "^4.1.0",
+    "console.table": "^0.10.0"
+  },
+  "description": "Simple CLI application used to retreive movie list from themoviedb.com API",
+  "main": "./sources/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node source/main.js"
+  },
+  "license": "ISC"
+}
